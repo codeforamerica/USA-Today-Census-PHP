@@ -25,25 +25,24 @@ Usage
 ### Methods ###
 
 * `locations` -- Returns all available ethnicity, housing, population and race information for specified area.
-	
-	// Get location data for all US states
-	$census->locations();
+<pre><code>// Get location data for all US states
+	$census->locations();</pre></code>
 
 * `ethnicity` -- Returns an area's ethnic data. Information includes how much of the population identifies as Hispanic or non-Hispanic white, and the USA TODAY Diversity Index.
-	// Get ethnic data for Virgina
-	$census->housing(array("keypat" => "VA"));
+<pre><code>// Get ethnic data for Virgina
+	$census->housing(array("keypat" => "VA"));</pre></code>
 
 * `housing` -- Returns an area's housing data. Information includes the number of housing units, and the percentage of those that are vacant.
-	// Get housing data for Accomack County, Virgina
-	$census->ethnicity(array("keypat" => "51001", "keyname" => "FIPS", "sumlevid" => 3));
+<pre><code>// Get housing data for Accomack County, Virgina
+	$census->ethnicity(array("keypat" => "51001", "keyname" => "FIPS", "sumlevid" => 3));</pre></code>
 
 * `population` -- Returns an area's population data. Information includes the total population of an area, average population per square mile, and the percent by which that population has changed since the last census.
-	// Get population data for all US states
-	$census->population();
+<pre><code>// Get population data for all US states
+	$census->population();</pre></code>
 
 * `race` -- Returns an area's racial data. Information includes the percentage of an area's population that identifies as White, Black, American Indian, Asian, native Hawaiian/Pacific Islander, or mixed race.
-	// Get racial data for all US states
-	$census->race();
+<pre><code>// Get racial data for all US states
+	$census->race();</pre></code>
 
 Copyright
 ---------
