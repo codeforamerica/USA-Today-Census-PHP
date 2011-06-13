@@ -31,10 +31,12 @@ class APIBaseClass {
 		#add API key
 		if($this->api_key){
 			if(!$params) $path .= "?";
-			$path .= $this->api_param_name . "=" . $this->api_key;
+			$path .= "&" . $this->api_param_name . "=" . $this->api_key;
 		}
 		
 		$url = $this->_root . $path;		
+		
+		error_log($url);
 		
 		curl_setopt($this->_http, CURLOPT_URL, $url);
 		if($headers) curl_setopt($this->_http, CURLOPT_HTTPHEADER, $headers);

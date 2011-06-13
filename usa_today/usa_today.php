@@ -2,7 +2,7 @@
 require('APIBaseClass.php');
 
 class USA_Today_Census extends APIBaseClass {
-	protected $_root = "http://api.usatoday.com/open/census";	
+	protected $_root = "http://api.usatoday.com/open/census/";	
 	protected $api_param_name = "api_key";
 	protected $format = "json";
 	
